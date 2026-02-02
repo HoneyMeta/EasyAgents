@@ -1,0 +1,38 @@
+# EasyAgents Workflow Template
+# This is an example workflow configuration
+
+version: "1.0"
+project: "example-project"
+created_at: "2026-01-01T00:00:00Z"
+updated_at: "2026-01-01T00:00:00Z"
+
+config:
+  lock_timeout: 180000          # Lock timeout in ms (3 minutes)
+  max_parallel_agents: 5        # Maximum parallel agents
+  auto_refactor_threshold: 3    # Modifications before suggesting refactor
+  inactive_timeout: 600000      # Agent inactive timeout (10 minutes)
+
+agents: {}
+
+tasks:
+  # Example task structure
+  # task_001:
+  #   id: "task_001"
+  #   name: "Design Database Schema"
+  #   description: "Design the database schema for user management"
+  #   status: "pending"
+  #   priority: 1
+  #   assigned_agent: null
+  #   dependencies: []
+  #   dependents: ["task_002"]
+  #   files:
+  #     - path: "src/db/schema.sql"
+  #       type: "create"
+  #   created_at: "2026-01-01T00:00:00Z"
+  #   updated_at: "2026-01-01T00:00:00Z"
+
+locks: {}
+
+modifications: []
+
+refactor_suggestions: []
